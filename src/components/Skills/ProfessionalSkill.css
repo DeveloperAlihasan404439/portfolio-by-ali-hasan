@@ -1,0 +1,85 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+
+}
+@media screen and (max-width: 598px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+.progress-bar{
+    position: relative;
+    background-color: #092f46;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 280px;
+    height: 250px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+.progress-bar svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.progress-bar svg circle{
+    fill: none;
+    stroke-width: 8px;
+    stroke-dasharray:505 ;
+    stroke-dashoffset: 505;
+    stroke-linecap: round;
+    animation: animate 2s linear forwards;
+}
+.conmmunication svg circle{
+    stroke: yellow;
+    animation: conmmunication 2s linear forwards;
+}
+@keyframes conmmunication {
+    100%{
+        stroke-dashoffset: 65;
+    }
+}
+.Team svg circle{
+    stroke: red;
+    animation: Team 2s linear forwards;
+}
+@keyframes Team {
+    100%{
+        stroke-dashoffset: 75;
+    }
+}
+.Problem svg circle{
+    stroke: white;
+    animation: Problem 2s linear forwards;
+}
+@keyframes Problem {
+    100%{
+        stroke-dashoffset: 58;
+    }
+}
+.Leadership svg circle{
+    stroke: aqua;
+    animation: Leadership 2s linear forwards;
+}
+@keyframes Leadership {
+    100%{
+        stroke-dashoffset: 61;
+    }
+}

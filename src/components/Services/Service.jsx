@@ -107,7 +107,7 @@ function Service() {
   const serviceTotal = Math.ceil(services.length / ItemsPerPage);
   return (
     <>
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 mt-6 lg:mt-10 group">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-6 lg:mt-10 group">
         {servicesItems.map((service) => (
           <div
             key={service.id}
@@ -122,7 +122,7 @@ function Service() {
           </div>
         ))}
       </div>
-      <div className="hidden lg:flex justify-center w-full lg:w-[400px] m-auto py-5 ">
+      <div className="flex justify-center w-full lg:w-[400px] m-auto py-5 ">
         <DynamicResponsivePagination
           current={servicesItems}
           total={serviceTotal}

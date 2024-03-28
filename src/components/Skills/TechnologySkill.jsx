@@ -1,3 +1,4 @@
+"use client";
 import { useState } from 'react';
 import './TechnologySkill.css'
 export default function TechnologySkill() {
@@ -65,18 +66,18 @@ export default function TechnologySkill() {
     const backend = skills.filter((frontend) => frontend.type === "backend");
     return (
         <div>
-          <div className="flex gap-7">
+          <div className="md:flex gap-7">
             <button
               onClick={() => hendelTypeSkill("frontend")}
               title={`${type==="frontend"?'Active Technology':'Disabled Technology'}`}
-              className={`rounded-md flex justify-center items-center text-xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 mt-10 px-5 py-3 border_shadow md:w-fit ${type==="frontend"?'bg-[#072232]':'bg-[#051a1a]'}`}
+              className={`rounded-md flex justify-center items-center text-xl w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 mt-10 px-5 py-3 border_shadow md:w-fit ${type==="frontend"?'bg-[#072232]':'bg-[#051a1a]'}`}
             >
               Front-End Technology
             </button>
             <button
               onClick={() => hendelTypeSkill("backend")}
               title={`${type==="backend"?'Active Technology':'Disabled Technology'}`}
-              className={`rounded-md flex justify-center items-center text-xl transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 mt-10 px-5 py-3 border_shadow md:w-fit ${type==="backend"?'bg-[#072232]':'bg-[#051a1a]'}`}
+              className={`rounded-md flex justify-center items-center text-xl w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 mt-10 px-5 py-3 border_shadow md:w-fit ${type==="backend"?'bg-[#072232]':'bg-[#051a1a]'}`}
             >
               Back-End Technology
             </button>

@@ -1,4 +1,4 @@
-"use client";
+import ProfessionalSkill from "./ProfessionalSkill";
 import TechnologySkill from "./TechnologySkill";
 function Skills() {
   return (
@@ -8,16 +8,12 @@ function Skills() {
           My Skills
         </span>
       </h2>
-      <div className="w-full flex ">
-        <div className="w-[50%]">
-        <TechnologySkill />
+      <div className="w-full lg:flex gap-7">
+        <div className="w-full lg:w-[50%]">
+          <TechnologySkill />
         </div>
-        <div className="w-[50%] mt-10">
-          <h2 className="text-2xl text-center font-medium ">
-            <span className="border-b-2 border-[#25BFBF] md:pb-1 transition-[.4s] hover:text-[#25BFBF]">
-              Technical Skills{" "}
-            </span>
-          </h2>
+        <div className="w-full lg:w-[50%] mt-5 lg:mt-10">
+          <ProfessionalSkill/>
         </div>
       </div>
     </div>
