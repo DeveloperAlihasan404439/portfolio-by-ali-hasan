@@ -1,0 +1,27 @@
+.justify-content-center .pagination,ol, ul, menu {
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    gap: 1.15rem !important;
+    margin-top: 10px;
+}
+
+.page-item .active  {
+    border: none;
+    background: #25BFBF !important;
+    color: #EEEEEE;
+}
+.page-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 13px;
+    font-size: 24px;
+    background: #072232;
+    color: #EEEEEE;
+    border-radius: 100%;
+    box-shadow: 0 0 5px 5px #25BFBF;
+    /* margin-left: 5px; */
+    cursor: pointer;
+}
