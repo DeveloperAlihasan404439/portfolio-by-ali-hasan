@@ -3,7 +3,7 @@
 }
 .box-area{
     display: grid;
-    grid-template-columns: repeat(minmax(350px, 1rf));
+    grid-template-columns: repeat(minmax(300px, 1rf));
     grid-gap: 20px;
     margin-top: 50px;
 }

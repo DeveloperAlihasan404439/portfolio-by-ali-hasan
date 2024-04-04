@@ -4,7 +4,7 @@ export default function Navber() {
  
   return (
     <div className="header">
-      <a href="" className="logo">
+      <a href="#" className="logo">
         Ali <span>Hasan</span>
       </a>
       <input type="checkbox" name="" id="check" />
@@ -18,7 +18,7 @@ export default function Navber() {
         <a href="#services" style={{ '--i': 2 }}>Services</a>
         <a href="#skills" style={{ '--i': 3 }}>Skills</a>
         <a href="#project" style={{ '--i': 4 }}>Project</a>
-        <a href="#" style={{ '--i': 5 }}>Contact</a>
+        <a href="#contact" style={{ '--i': 5 }}>Contact</a>
       </nav>
     </div>
   );

@@ -1,10 +1,11 @@
 import duay from "../../assets/projact/duay.png";
 import bodypulse from "../../assets/projact/bodypulse.png";
-import careerpulse from "../../assets/projact/carer pulse.png"; // Fixed typo in filename
+import careerpulse from "../../assets/projact/carer pulse.png";
 import eventmenagement from "../../assets/projact/event-menagement.png";
-import communit from "../../assets/projact/commint-calcaral.png"; // Fixed typo in filename
+import communit from "../../assets/projact/commint-calcaral.png";
 import brand_shop from "../../assets/projact/brand-shop.png";
-import donation from "../../assets/projact/donation.png"; // Fixed typo in variable name
+import donation from "../../assets/projact/donation.png";
+import swiftMail from "../../assets/projact/swift-mail.png";
 
 import Image from "next/image";
 import "./Project.css";
@@ -13,60 +14,66 @@ export default function Project() {
   const projectList = [
     {
       id: "1",
-      title: "Dua Page",
-      image: duay,
-      demo: "https://duay.vercel.app",
-      github: "https://github.com/DeveloperAlihasan404439/IRD-job-task",
+      title: "Swift Mail",
+      image: swiftMail,
+      demo: "https://swift-mail-5a7d7.web.app",
+      github: "https://github.com/DeveloperAlihasan404439/Team-client-project",
+      description:
+        "Swifty Mail revolutionizes email management through its innovative approach to privacy and inbox organization. By offering disposable email addresses and a range of advanced features, ",
     },
     {
-      id: "2",
-      title: "Body Pulse",
-      image: bodypulse,
-      demo: "https://bodypulse-assignament-12.surge.sh",
-      github:
-        "https://github.com/DeveloperAlihasan404439/Body-pulse-client-site",
-    },
-    {
-      id: "3",
-      title: "Career Pulse",
-      image: careerpulse,
-      demo: "https://authfirebaseassignament11.web.app",
-      github:
-        "https://github.com/DeveloperAlihasan404439/careee-pulse-client-site",
-    },
-    {
-      id: "4",
-      title: "Event Menagement",
-      image: eventmenagement,
-      demo: "https://event-menagement-surge.surge.sh",
-      github: "https://github.com/DeveloperAlihasan404439/event-management",
-    },
-    {
-      id: "5",
+      id: "6",
       title: "Communit Cultural",
       image: communit,
       demo: "https://communitd-cultural.surge.sh",
       github:
         "https://github.com/DeveloperAlihasan404439/Communitd-and-Cultural-Cliend",
+      description:"Eventbrite Education is your gateway to a world of learning. Discover workshops, courses seminars, and more. Enhance your skills, explore interests, or delve into academics. Find, register, and customize your learning journey with ease",
     },
     {
-      id: "6",
-      title: "Brand Shop",
-      image: brand_shop,
-      demo: "https://github.com/DeveloperAlihasan404439/brand-shiop-10",
-      github: "https://github.com/DeveloperAlihasan404439/brand-shiop-10",
+      id: "2",
+      title: "Dua Page",
+      image: duay,
+      demo: "https://duay.vercel.app",
+      github: "https://github.com/DeveloperAlihasan404439/IRD-job-task",
+      description:
+        "This repository contains information about the importance of dua (supplication) in Islam, including its significance, benefits, and practices.",
     },
     {
-      id: "7",
-      title: "Donation",
-      image: donation,
-      demo: "https://donation-projact.surge.sh",
-      github: "https://github.com/DeveloperAlihasan404439/donation-projact",
+      id: "3",
+      title: "Body Pulse",
+      image: bodypulse,
+      demo: "https://bodypulse-assignament-12.surge.sh",
+      github:
+        "https://github.com/DeveloperAlihasan404439/Body-pulse-client-site",
+      description:
+        "BodyPulse Tracker revolutionizes your fitness journey. Monitor your activities, track vital stats, and unlock personalized insights for a holistic approach to your well-being. Sync, track, and excel with BodyPulse Tracker",
+    },
+    {
+      id: "4",
+      title: "Career Pulse",
+      image: careerpulse,
+      demo: "https://authfirebaseassignament11.web.app",
+      github:
+        "https://github.com/DeveloperAlihasan404439/careee-pulse-client-site",
+      description:
+        "Career Pulse is a dedicated job marketing website that specializes in promoting job listings and career opportunities. With a focus on helping job seekers and employers connect,",
+    },
+    {
+      id: "5",
+      title: "Event Menagement",
+      image: eventmenagement,
+      demo: "https://event-menagement-surge.surge.sh",
+      github: "https://github.com/DeveloperAlihasan404439/event-management",
+      description:"Career Pulse is a dedicated job marketing website that specializes in promoting job listings and career opportunities. With a focus on helping job seekers and employers connect,",
     },
   ];
 
   return (
-    <div id="project" className="w-11/12 max-w-7xl mx-auto relative rounded-xl shadow bg-[#092f46] bg-cover bg-no-repeat mt-10 p-10 border_shadow">
+    <div
+      id="project"
+      className="w-11/12 max-w-7xl mx-auto relative rounded-xl shadow bg-[#092f46] bg-cover bg-no-repeat mt-10 p-10 border_shadow"
+    >
       <h2 className="text-2xl text-center font-medium ">
         <span className="border-b-2 border-[#25BFBF] md:pb-1 transition-[.4s] hover:text-[#25BFBF]">
           My Project
@@ -82,17 +89,18 @@ export default function Project() {
                   height={600}
                   src={project.image}
                   alt={project?.title}
-                  className="w-full h-[400px] rounded-xl"
+                  className="w-full h-[380px] rounded-xl"
                 />
                 <div className="overlay">
                   <h3>{project?.title}</h3>
-                  <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Maxime, iusto officia. Molestias ipsa,
-                  </p>
+                  <p>{project?.description}</p>
                   <div className="live-link">
-                    <Link href={project?.demo} className="link">Demo Link</Link>
-                    <Link href={project?.github} className="link">Github Link</Link>
+                    <Link href={project?.demo} className="link">
+                      Demo Link
+                    </Link>
+                    <Link href={project?.github} className="link">
+                      Github Link
+                    </Link>
                   </div>
                 </div>
               </div>

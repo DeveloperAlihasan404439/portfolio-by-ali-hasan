@@ -12,7 +12,7 @@ import { SiConvertio, SiFirebase } from "react-icons/si";
 // import { TbBrandJavascript } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
 
-import './Service.css'
+import "./Service.css";
 import { useState } from "react";
 function Service() {
   const services = [
@@ -84,7 +84,7 @@ function Service() {
     {
       id: 9,
       title: "Full-Stack Development",
-      color: "#B412E1",
+      color: "#808000",
       description:
         "Embark on a comprehensive journey in 'Web Development,' covering both client and server sides. Integrate cutting-edge frontend technologies, backend frameworks, and master the art of RESTful API design.",
       icon: FaLaptopCode,
@@ -107,18 +107,19 @@ function Service() {
   const serviceTotal = Math.ceil(services.length / ItemsPerPage);
   return (
     <>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 mt-6 lg:mt-10 group">
+      <div className="containers">
         {servicesItems.map((service) => (
-          <div
-            key={service.id}
-            className="w-full border border-[#25BFBF] p-5 border_shadow rounded-md bg-[#082435] transition ease-in-out delay-150 hover:-translate-y-3 hover:scale-110 hover:bg-[#082435c0] duration-300 group-hover:blur-sm hover:!blur-none cursor-pointer"
-          >
-            <service.icon
-              className={`text-5xl text-`}
-              style={{ color: `${service.color}` }}
-            />
-            <h2 className="pt-4 pb-2 text-xl font-medium">{service.title}</h2>
-            <p>{service.description}</p>
+          <div key={service.id} className="card" style={{ background: `${service.color}` }}>
+            <div className="imgBx" dataText="Design">
+              <service.icon style={{ color: `${service.color}` }} />
+            </div>
+            <div className="content">
+              <div>
+                <h3>{service.title}</h3>
+                <p>{service.description.slice(0, 100)}....</p>
+                <a href="#">Read More</a>
+              </div>
+            </div>
           </div>
         ))}
       </div>
