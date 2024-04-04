@@ -1,5 +1,7 @@
 import About from "../About/About";
 import Banner from "../Banner/Banner";
+import Contact from "../Contact/Contact";
+import Footer from "../Footer/Footer";
 import Navber from "../Navber/Navber";
 import Project from "../Project/Project";
 import Services from "../Services/Services";
@@ -14,6 +16,8 @@ function Home() {
             <Services/>
             <Skills/>
             <Project/>
+            <Contact/>
+            <Footer/>
         </>
     );
 }

@@ -14,7 +14,7 @@
 }
 .progress-bar{
     position: relative;
-    background-color: #092f46;
+    background-color: #061b28;
     border-radius: 10px;
     margin-top: 20px;
     width: 280px;
@@ -47,39 +47,27 @@
     stroke-linecap: round;
     animation: animate 2s linear forwards;
 }
-.conmmunication svg circle{
+.conmmunication svg circle {
     stroke: yellow;
-    animation: conmmunication 2s linear forwards;
+    transition: stroke-dashoffset 2s linear;
 }
-@keyframes conmmunication {
-    100%{
-        stroke-dashoffset: 65;
-    }
+
+.conmmunication svg circle.animated {
+    stroke-dashoffset: 65;
 }
-.Team svg circle{
+
+.team svg circle{
     stroke: red;
-    animation: Team 2s linear forwards;
+    transform: stroke-dashoffset 2s linear ;
 }
-@keyframes Team {
-    100%{
-        stroke-dashoffset: 75;
-    }
+.team svg circle.animated {
+    stroke-dashoffset: 55;
 }
 .Problem svg circle{
     stroke: white;
     animation: Problem 2s linear forwards;
 }
-@keyframes Problem {
-    100%{
-        stroke-dashoffset: 58;
-    }
-}
 .Leadership svg circle{
     stroke: aqua;
     animation: Leadership 2s linear forwards;
-}
-@keyframes Leadership {
-    100%{
-        stroke-dashoffset: 61;
-    }
 }

@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
+import SocialMedia from "../About/SocialMedia";
 export default function BannerDiscription() {
   return (
     <div className="md:ml-20">
@@ -34,22 +35,8 @@ export default function BannerDiscription() {
         captivating online experiences. My expertise lies in website design,
         frontend...
       </p>
-      <div className="mt-5 lg:mt-10 flex items-center justify-center md:justify-start gap-5">
-        <div className="w-10 h-10 border rounded-full flex justify-center items-center text-2xl border-[#25BFBF] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#25BFBF] duration-300">
-          <Link href="https://www.facebook.com/alihasan404439">
-            <FaFacebookF />
-          </Link>
-        </div>
-        <div className="w-10 h-10 border rounded-full flex justify-center items-center text-2xl border-[#25BFBF] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#25BFBF] duration-300">
-          <Link href="https://www.linkedin.com/in/ali-hasan-409845256">
-            <FaLinkedinIn />
-          </Link>
-        </div>
-        <div className="w-10 h-10 border rounded-full flex justify-center items-center text-2xl border-[#25BFBF] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#25BFBF] duration-300">
-          <Link href="https://github.com/DeveloperAlihasan404439">
-            <FaGithub />
-          </Link>
-        </div>
+      <div className="mt-5 lg:mt-10">
+        <SocialMedia/>
       </div>
       <Link
         href="https://drive.google.com/file/d/1HyQiIRPAh5mQaRO3sGpM6rnDfYn-ey4l/view?usp=drive_link"

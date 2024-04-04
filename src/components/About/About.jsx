@@ -1,8 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import banner2 from "../../assets/banner2.png";
-import Link from "next/link";
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import SocialMedia from "./SocialMedia";
 export default function About() {
   return (
     <div id="about" className="w-11/12 mx-auto md:flex items-center gap-3 my-10">
@@ -24,22 +23,8 @@ export default function About() {
           today's competitive digital landscape, drawing in visitors and driving
           meaningful engagement.
         </p>
-        <div className="mt-5 lg:mt-10 flex items-center gap-5">
-          <div className="w-10 h-10 border rounded-full flex justify-center items-center text-2xl border-[#25BFBF] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#25BFBF] duration-300">
-            <Link href="https://www.facebook.com/alihasan404439">
-              <FaFacebookF />
-            </Link>
-          </div>
-          <div className="w-10 h-10 border rounded-full flex justify-center items-center text-2xl border-[#25BFBF] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#25BFBF] duration-300">
-            <Link href="https://www.linkedin.com/in/ali-hasan-409845256">
-              <FaLinkedinIn />
-            </Link>
-          </div>
-          <div className="w-10 h-10 border rounded-full flex justify-center items-center text-2xl border-[#25BFBF] transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 hover:bg-[#25BFBF] duration-300">
-            <Link href="https://github.com/DeveloperAlihasan404439">
-              <FaGithub />
-            </Link>
-          </div>
+        <div className="mt-5 lg:mt-10">
+          <SocialMedia/>
         </div>
       </div>
     </div>
