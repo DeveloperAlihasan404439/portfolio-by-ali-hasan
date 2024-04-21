@@ -1,0 +1,58 @@
+.tabs_container {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    box-shadow: 0 2px 16px rgba(0, 0, .1);
+}
+
+.tabs_box {
+
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 2px solid rgba(229, 229, 229);
+    font-size: 18px;
+    font-weight: 600;
+    transition: .4s ease-in-out;
+    position: relative;
+}
+
+.tabs_box .tab_button {
+    font-size: 18px;
+    font-weight: 600;
+    background: none;
+    padding: 18px;
+    cursor: pointer;
+    border: none;
+    transition: .4s ease-in-out;
+}
+.tabs_box .tab_button.active {
+    color: #25BFBF;
+}
+.tabs_contant{
+    padding: 20px;
+}
+.tabs_contant .contant{
+    display: none;
+    animation: moving .5s;
+}
+@keyframes moving{
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+        transition: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        transition: 1.8s ease;
+    }
+}
+.tabs_contant .contant.active{
+    display: block;
+}
+.tabs_container .contant h3{
+margin-bottom: 10px;
+}

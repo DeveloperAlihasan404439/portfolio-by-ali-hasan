@@ -1,0 +1,31 @@
+.entryarea{
+ position: relative;
+ height: 30px;
+ line-height: 50px;
+}
+input{
+    position: absolute; 
+    width: 100%;
+    outline: none;
+    font-size: 1.5rem;
+    background: transparent;
+    line-height: 50px;
+    padding: 0 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+.labelline{
+    position: absolute;
+    font-size: 1.6rem;
+    color: #FFF;
+    padding: 0 20px;
+    margin: 0 20px;
+    background: #092f46;
+}
+input:focus,
+input:valid{
+    color: aqua;
+    border: 1px solid aqua;
+}

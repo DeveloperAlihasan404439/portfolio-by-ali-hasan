@@ -9,7 +9,7 @@ export default function TechnologySkill() {
     {
       id: "3",
       name: "Tailwind CSS",
-      value: "90%",
+      value: "93%",
       type: "frontend",
     },
     {
@@ -102,63 +102,91 @@ export default function TechnologySkill() {
   const backend = skills.filter((frontend) => frontend.type === "backend");
   const tools = skills.filter((frontend) => frontend.type === "tools");
   return (
-    <div>
-      <div className="md:flex gap-7">
-        <button
-          onClick={() => hendelTypeSkill("frontend")}
-          title={`${
-            type === "frontend" ? "Active Technology" : "Disabled Technology"
-          }`}
-          className={`rounded-md flex justify-center items-center text-[17px] w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 mt-10 px-2 py-3 border_shadow md:w-fit ${
-            type === "frontend" ? "bg-[#072232]" : "bg-[#061b28]"
-          }`}
-        >
-          Front-End Technology
-        </button>
-        <button
-          onClick={() => hendelTypeSkill("backend")}
-          title={`${
-            type === "backend" ? "Active Technology" : "Disabled Technology"
-          }`}
-          className={`rounded-md flex justify-center items-center text-[17px] w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 mt-10 px-2 py-3 border_shadow md:w-fit ${
-            type === "backend" ? "bg-[#072232]" : "bg-[#061b28]"
-          }`}
-        >
-          Back-End Technology
-        </button>
-        <button
-          onClick={() => hendelTypeSkill("tools")}
-          title={`${
-            type === "tools" ? "Active Technology" : "Disabled Technology"
-          }`}
-          className={`rounded-md flex justify-center items-center text-[17px] w-full transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300 mt-10 px-2 py-3 border_shadow md:w-fit ${
-            type === "tools" ? "bg-[#072232]" : "bg-[#061b28]"
-          }`}
-        > 
-          Tools Technology
-        </button>
-      </div>
-      <div className="skills">
-        {type === "frontend" || type === "backend" ? (
-          <>
-            {type === "frontend" ? (
+      <div className="tabs_container_technology">
+        {/* tabs button section start  */}
+        <div className="tabs_box_technology ">
+          <div className="relative">
+            <button
+              onClick={() => hendelTypeSkill("frontend")}
+              className={`${
+                type === "frontend" ? "tab_button active" : "tab_button"
+              }`}
+            >
+              FrontEnd Technology
+            </button>
+            {type === "frontend" && (
+              <div className="absolute -bottom-[3px]  w-full h-1 bg-[#25BFBF] rounded-lg transition-all delay-700"></div>
+            )}
+          </div>
+          <div className="relative">
+            <button
+              onClick={() => hendelTypeSkill("backend")}
+              className={`${
+                type === "backend" ? "tab_button active" : "tab_button"
+              }`}
+            >
+              BackEnd Technology
+            </button>
+            {type === "backend" && (
+              <div className="absolute -bottom-[3px]  w-full h-1 bg-[#25BFBF] rounded-lg transition-all delay-700"></div>
+            )}
+          </div>
+          <div className="relative">
+            <button
+              onClick={() => hendelTypeSkill("tools")}
+              className={`${
+                type === "tools" ? "tab_button active" : "tab_button"
+              }`}
+            >
+              Tools Technology
+            </button>
+            {type === "tools" && (
+              <div className="absolute -bottom-[3px]  w-full h-1 bg-[#25BFBF] rounded-lg transition-all delay-700"></div>
+            )}
+          </div>
+        </div>
+        {/* tabs button section end  */}
+
+        {/* contant section start  */}
+        <div className="tabs_contant">
+          <div className="skills">
+            {type === "frontend" || type === "backend" ? (
               <>
-                {frontend.map((skill) => (
-                  <div key={skill.id} className="skill">
-                    <div className="skill-name">{skill.name}</div>
-                    <div className="skill-bar">
-                      <div
-                        className="skill-per"
-                        per={skill.value}
-                        style={{ maxWidth: skill.value }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+                {type === "frontend" ? (
+                  <>
+                    {frontend.map((skill) => (
+                      <div key={skill.id} className="skill">
+                        <div className="skill-name">{skill.name}</div>
+                        <div className="skill-bar">
+                          <div
+                            className="skill-per"
+                            per={skill.value}
+                            style={{ maxWidth: skill.value }}
+                          ></div>
+                        </div>
+                      </div>
+                    ))}
+                  </>
+                ) : (
+                  <>
+                    {backend.map((skill) => (
+                      <div key={skill.id} className="skill">
+                        <div className="skill-name">{skill.name}</div>
+                        <div className="skill-bar">
+                          <div
+                            className="skill-per"
+                            per={skill.value}
+                            style={{ maxWidth: skill.value }}
+                          ></div>
+                        </div>
+                      </div>
+                    ))}
+                  </>
+                )}
               </>
             ) : (
               <>
-                {backend.map((skill) => (
+                {tools.map((skill) => (
                   <div key={skill.id} className="skill">
                     <div className="skill-name">{skill.name}</div>
                     <div className="skill-bar">
@@ -172,24 +200,9 @@ export default function TechnologySkill() {
                 ))}
               </>
             )}
-          </>
-        ) : (
-          <>
-            {tools.map((skill) => (
-              <div key={skill.id} className="skill">
-                <div className="skill-name">{skill.name}</div>
-                <div className="skill-bar">
-                  <div
-                    className="skill-per"
-                    per={skill.value}
-                    style={{ maxWidth: skill.value }}
-                  ></div>
-                </div>
-              </div>
-            ))}
-          </>
-        )}
+          </div>
+        </div>
+        {/* contant section end  */}
       </div>
-    </div>
   );
 }

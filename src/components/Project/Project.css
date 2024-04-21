@@ -11,7 +11,7 @@
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    box-shadow: 5px 5px 15px rgba(0,0,0,.5);
+    box-shadow: 0 2px 16px rgba(0, 0, .1);
 }
 .box Image{
     width: 100%;
@@ -40,7 +40,7 @@
 .overlay h3{
     font-weight: 500;
     margin-bottom: 5px;
-    margin-top: 50%;
+    margin-top: 30%;
     font-family: bebas neue;
     font-size: 30px;
     letter-spacing: 2px;

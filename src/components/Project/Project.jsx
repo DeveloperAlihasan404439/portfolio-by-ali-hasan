@@ -3,8 +3,6 @@ import bodypulse from "../../assets/projact/bodypulse.png";
 import careerpulse from "../../assets/projact/carer pulse.png";
 import eventmenagement from "../../assets/projact/event-menagement.png";
 import communit from "../../assets/projact/commint-calcaral.png";
-import brand_shop from "../../assets/projact/brand-shop.png";
-import donation from "../../assets/projact/donation.png";
 import swiftMail from "../../assets/projact/swift-mail.png";
 
 import Image from "next/image";
@@ -72,7 +70,7 @@ export default function Project() {
   return (
     <div
       id="project"
-      className="w-11/12 max-w-7xl mx-auto relative rounded-xl shadow bg-[#092f46] bg-cover bg-no-repeat mt-10 p-10 border_shadow"
+      className="w-full relative shadow bg-[#092f46] bg-cover bg-no-repeat mt-10 px-14 py-10 border_shadow"
     >
       <h2 className="text-2xl text-center font-medium ">
         <span className="border-b-2 border-[#25BFBF] md:pb-1 transition-[.4s] hover:text-[#25BFBF]">

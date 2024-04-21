@@ -2,6 +2,7 @@
 import Image from "next/image";
 import banner2 from "../../assets/banner2.png";
 import SocialMedia from "./SocialMedia";
+import Tabs from "./Tabs";
 export default function About() {
   return (
     <div id="about" className="w-11/12 mx-auto md:flex items-center gap-3 my-10">
@@ -15,14 +16,15 @@ export default function About() {
           I'm a highly experienced web designer with a focus on creating
           visually striking websites and frontend solutions. Proficient in
           various design tools and coding languages, I excel in crafting
-          seamless user experiences. Whether it's building responsive layouts or
+          seamless user experiences. {/* Whether it's building responsive layouts or
           enhancing site functionality, I'm dedicated to delivering top-notch
           results. Let's collaborate to transform your ideas into captivating
           online platforms that not only impress users but also achieve your
           goals effectively. With my expertise, your website will stand out in
           today's competitive digital landscape, drawing in visitors and driving
-          meaningful engagement.
+          meaningful engagement. */}
         </p>
+        <Tabs/>
         <div className="mt-5 lg:mt-10">
           <SocialMedia/>
         </div>

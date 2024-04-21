@@ -26,10 +26,9 @@ export default function BannerDiscription() {
         ]}
         wrapper="span"
         speed={50}
-        style={{ fontSize: "2em", display: "inline-block" }}
+        style={{ fontSize: "2em", display: "inline-block"}}
         repeat={Infinity}
       />
-      {/* <h3 className="text-2xl font-medium"></h3> */}
       <p className="text-xl mt-2">
         I'm a skilled web designer with extensive experience in crafting
         captivating online experiences. My expertise lies in website design,

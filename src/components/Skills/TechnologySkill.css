@@ -1,9 +1,70 @@
+/* tabs button css style start  */
+.tabs_container_technology {
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    box-shadow: 0 2px 16px rgba(0, 0, .1);
+    border-radius: 10px;
+}
+.tabs_box_technology {
+    padding-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(229, 229, 229);
+    font-size: 16px;
+    font-weight: 600;
+    transition: .4s ease-in-out;
+    position: relative;
+}
 
+.tabs_box_technology .tab_button {
+    font-size: 16px;
+    font-weight: 600;
+    background: none;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    transition: .4s ease-in-out;
+}
+.tabs_box_technology .tab_button.active {
+    color: #25BFBF;
+}
+.tabs_contant{
+    padding: 20px;
+}
+.tabs_contant .contanted{
+    display: none;
+    animation: moving .5s;
+}
+@keyframes moving{
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+        transition: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+        transition: 1.8s ease;
+    }
+}
+.tabs_contant .contant.active{
+    display: block;
+}
+.tabs_container .contant h3{
+margin-bottom: 10px;
+}
+/* contant section css style start  */
 .skills{
     width: 100%;
 }
 .skill-name{
-    font-size: 1rem;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;
     margin: 20px 0;
@@ -57,3 +118,4 @@
         animation: scroll(1);
     }
 }
+

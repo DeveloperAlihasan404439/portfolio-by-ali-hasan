@@ -1,0 +1,44 @@
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.loading_container {
+    position: absolute;
+    top: 20%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading_item {
+    position: absolute;
+    background-color: transparent;
+    width: calc(var(--i)*2.5vmin);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: .9vmin solid rgb(0, 200, 255);
+    transform-style: preserve-3d;
+    transform: rotateX(70deg)translateZ(50px);
+    animation: move 3s ease-in-out calc(var(--i)*0.1s) infinite;
+    box-shadow: 0 0 15px rgb(124, 124, 124);
+}
+
+@keyframes move {
+
+    0%,
+    100% {
+        transform: rotateX(70deg) translateZ(0) translateY(0);
+        filter: hue-rotate(0);
+    }
+
+    50% {
+        transform: rotateX(70deg) translateZ(50px) translateY(-50vmin);
+        filter: hue-rotate(360deg);
+
+    }
+}

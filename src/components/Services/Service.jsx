@@ -9,7 +9,6 @@ const DynamicResponsivePagination = dynamic(
 import { MdDesignServices, MdDisplaySettings } from "react-icons/md";
 import { FaReact, FaLaptopCode, FaCodeBranch, FaNode } from "react-icons/fa";
 import { SiConvertio, SiFirebase } from "react-icons/si";
-// import { TbBrandJavascript } from "react-icons/tb";
 import { DiMongodb } from "react-icons/di";
 
 import "./Service.css";
@@ -110,7 +109,7 @@ function Service() {
       <div className="containers">
         {servicesItems.map((service) => (
           <div key={service.id} className="card" style={{ background: `${service.color}` }}>
-            <div className="imgBx" dataText="Design">
+            <div className="imgBx" datatext="Design">
               <service.icon style={{ color: `${service.color}` }} />
             </div>
             <div className="content">
