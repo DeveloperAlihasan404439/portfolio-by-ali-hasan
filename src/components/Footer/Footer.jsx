@@ -32,7 +32,7 @@ function Footer() {
           </nav>
           <SocialMedia/>
         </div>
-        <p className="text-center pt-10 pb-5">Copyright © 4-05-2024 <span className="text-[#25BFBF]">🎗</span> Ali Hasan Portfolio</p>
+        <p className="text-center pt-10 pb-5">Developed by  <span className="text-[#25BFBF]">🎗</span> Ali Hasan 2023</p>
       </div>
     </div>
   );

@@ -30,9 +30,7 @@ export default function BannerDiscription() {
         repeat={Infinity}
       />
       <p className="text-xl mt-2">
-        I'm a skilled web designer with extensive experience in crafting
-        captivating online experiences. My expertise lies in website design,
-        frontend...
+      Experienced web designer proficient in design tools and coding languages. Specializes in creating visually striking websites and seamless user experiences...
       </p>
       <div className="mt-5 lg:mt-10">
         <SocialMedia/>
