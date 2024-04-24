@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { TypeAnimation } from "react-type-animation";
-import SocialMedia from "../About/SocialMedia";
+import SocialMedia from "../Shared/SocialMedia/SocialMedia";
 export default function BannerDiscription() {
   return (
     <div className="md:ml-20">

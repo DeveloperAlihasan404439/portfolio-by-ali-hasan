@@ -1,5 +1,5 @@
 import React from "react";
-import SocialMedia from "../About/SocialMedia";
+import SocialMedia from "../Shared/SocialMedia/SocialMedia";
 
 function Footer() {
   return (
