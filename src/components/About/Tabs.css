@@ -41,7 +41,6 @@
     display: none;
     animation: moving .5s;
 }
-
 @keyframes moving {
     from {
         transform: translateX(50px);
@@ -62,4 +61,8 @@
 
 .tabs_container .contant h3 {
     margin-bottom: 10px;
+}
+.tabs_container .contant table {
+    overflow-x: scroll;
+    overflow: hidden;
 }

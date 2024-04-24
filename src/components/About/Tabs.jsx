@@ -1,11 +1,25 @@
 "use client";
 import { useState } from "react";
 import "./Tabs.css";
+import Link from "next/link";
 function Tabs() {
-  const [tabs, setTabs] = useState("education");
+  const [tabs, setTabs] = useState("cours");
   return (
     <div className="tabs_container">
       <div className="tabs_box ">
+      <div className="relative">
+          <button
+            onClick={() => setTabs("cours")}
+            className={`${
+              tabs === "cours" ? "tab_button active" : "tab_button"
+            }`}
+          >
+            Cours
+          </button>
+          {tabs === "cours" && (
+            <div className="absolute -bottom-[3px]  w-full h-1 bg-[#25BFBF] rounded-lg transition-all delay-700"></div>
+          )}
+        </div>
         <div className="relative">
           <button
             onClick={() => setTabs("education")}
@@ -20,19 +34,7 @@ function Tabs() {
             <div className="absolute -bottom-[3px]  w-full h-1 bg-[#25BFBF] rounded-lg transition-all delay-700"></div>
           )}
         </div>
-        <div className="relative">
-          <button
-            onClick={() => setTabs("cours")}
-            className={`${
-              tabs === "cours" ? "tab_button active" : "tab_button"
-            }`}
-          >
-            Cours
-          </button>
-          {tabs === "cours" && (
-            <div className="absolute -bottom-[3px]  w-full h-1 bg-[#25BFBF] rounded-lg transition-all delay-700"></div>
-          )}
-        </div>
+        
       </div>
       <div className="tabs_contant">
         <div
@@ -77,7 +79,7 @@ function Tabs() {
           <h1 className="text-xl">Web Development course with <span className="text-[#25BFBF]">Programming Hero!</span></h1>
           <p>
             🎉 Successfully completed the Web Development Course at Programming
-            Hero and earned certification! 🌟 Mastered HTML, CSS, JavaScript,
+            Hero and earned <Link href='https://drive.google.com/file/d/19Zr8kvgPHy09keuJHa-Fag9Q_wriWRg7/view?usp=sharing' className="text-[#25BFBF] border-b border-[#25BFBF] p-b-2 hover:text-[#1a9696]"> Certification! 🌟 </Link>Mastered HTML, CSS, JavaScript,
             and more to build stunning websites and dynamic applications. Ready
             to embark on the next stage of my coding journey!
           </p>

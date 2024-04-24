@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import banner2 from "../../assets/banner2.png";
-import SocialMedia from "./SocialMedia";
 import Tabs from "./Tabs";
 export default function About() {
   return (
@@ -24,9 +23,6 @@ export default function About() {
           into captivating online platforms.
         </p>
         <Tabs />
-        <div className="mt-3 lg:mt-4">
-          <SocialMedia />
-        </div>
       </div>
     </div>
   );
