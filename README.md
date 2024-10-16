@@ -24,7 +24,7 @@ Here, you'll find a breakdown of my technical skills and proficiencies. From pro
 
 | Link to demo                             | Link to Github Cliend Site                                                    | 
 | ---------------------------------------- | ----------------------------------------------------------------------------- |
-| [demo](https://portfolio-by-ali-hasan.vercel.app) | [Cliend Site](https://github.com/DeveloperAlihasan404439/portfolio-by-ali-hasan) |
+| [Demo](https://ali-hasan-portfolio.vercel.app/) <!-- / [Demo](https://portfolio-by-ali-hasan.vercel.app) --> | [Cliend Site](https://github.com/DeveloperAlihasan404439/portfolio-by-ali-hasan) |
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
